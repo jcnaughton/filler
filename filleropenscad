@@ -1,0 +1,40 @@
+$fn = 100;
+difference() {
+cube([114,43,2]);
+    translate([15,0,0])
+    for (i=[0:8])
+        translate([i*10,10,-3])
+            cylinder(h=11.5,r=1);   
+    translate([15,23,0])
+    for (i=[0:8])
+        translate([i*10,10,-3])
+            cylinder(h=11.5,r=1);   
+}
+translate([0,1,2])
+difference(){
+    cube([108,41,10]);
+    translate([2,2,-1]) 
+    cube([104,37,12]);  
+}
+translate([108,6.5,0])
+difference() {
+    cube([6,30,12]);
+    translate([-1,7.8,6])
+    rotate([0,90,0])
+    cylinder(h=11.5,r=3.2);
+}
+    
+    translate([107,28.6,6])
+    rotate([0,90,0])
+    cylinder(h=10.5,r=3);
+
+translate([32,16,-10])
+cube([50,10,10]);
+translate([32,21.5,-10])
+rotate([0,90,0])
+cylinder(h=50,r=7);
+
+translate([32,21.5,-10])
+sphere(7);
+translate([82,21.5,-10])
+sphere(7);
